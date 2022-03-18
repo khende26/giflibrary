@@ -57,8 +57,8 @@
                         <img class="circle" src="/images/erikalanguirand.jpg" alt="avatar" />
                     </div>
                     <div class="col s9">
-                        <h4 th:class="${gif.username}"></h4>
-
+                        <h4 th:text="${gif.username}"></h4>
+                        <p th:text="${gif.dateUploaded}"></p>
                     </div>
                 </div>
             </div>

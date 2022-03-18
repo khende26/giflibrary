@@ -7,6 +7,7 @@ public class Gif {
     private LocalDate dateUploaded;
     private String username;
     private boolean favorite;
+    private int id;
 
     public String getName() {
         return name;
@@ -40,10 +41,16 @@ public class Gif {
         this.favorite = favorite;
     }
 
-    public Gif(String name, LocalDate dateUploaded, String username, boolean favorite) {
+    public int getId() {return id; }
+
+    public void setId(int id) {this.id = id;}
+
+    public Gif(String name, LocalDate dateUploaded, String username, boolean favorite, int id) {
         this.name = name;
         this.dateUploaded = dateUploaded;
         this.username = username;
         this.favorite = favorite;
+        this.id = id;
     }
+
 }
